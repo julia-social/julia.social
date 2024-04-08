@@ -18,7 +18,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #7d6e99; /* Or use the exact purple color from the logo */
+        background-color: #7d6e99;
       }
       .container {
         text-align: center;
@@ -33,10 +33,8 @@
         margin-bottom: 20px;
       }
       input[type="email"] {
-        margin-top: 20px;
         padding: 10px;
-        width: 200px;
-        margin-right: 10px;
+        width: 100%;
         border: none;
         border-radius: 5px;
       }
@@ -57,12 +55,15 @@
         height: auto; /* Maintains aspect ratio */
         padding: 0 20px; /* Add desired padding */
         box-sizing: border-box; /* Includes padding in the element's total width */
+        display: flex;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <svg
+      <div style="display:flex;justify-content: center;">
+        <svg
         width="397"
         height="277"
         viewBox="0 0 397 277"
@@ -95,12 +96,16 @@
           fill="#039BE5"
         />
       </svg>
-
-      <div class="tagline">The internet for humans</div>
-      <form class="flex gap-4 w-full" onsubmit="handleSubmit(event)">
+    </div>
+ 
+       <div class="tagline">The Internet for Humans</div>
+ 
+      
+      <form class="flex gap-4 w-full p-5" onsubmit="handleSubmit(event)">
         <input
           type="email"
           name="email"
+          class="flex-1"
           placeholder="Enter your email for updates"
           required
         />
@@ -158,7 +163,7 @@
 
           try {
             const response = await fetch(
-              "https://julia-social-worker.mtaylor-247.workers.dev",
+              "https://not-bot-worker.mtaylor-247.workers.dev",
               {
                 method: "POST",
                 body: formData,
