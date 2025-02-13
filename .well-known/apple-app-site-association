@@ -1,0 +1,13 @@
+{
+    "applinks": {
+      "apps": [],
+      "details": [
+        {
+          "appID": "K3Q6WRBX4K.social.julia.notbott",
+          "paths": [
+            "/flow/*"
+          ]
+        }
+      ]
+    }
+  }
