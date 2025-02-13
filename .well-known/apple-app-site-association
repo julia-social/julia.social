@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "K3Q6WRBX4K.social.julia.notbott",
+        "appID": "K3Q6WRBX4K.social.julia.notbot",
         "paths": [
           "/flow/*"
         ]
