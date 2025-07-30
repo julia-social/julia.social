@@ -309,10 +309,10 @@
             submitBtn.textContent = 'Submitting...';
             
             try {
-                const form = document.getElementById('signupForm');
-                const formData = new FormData(form);
-					
-				const response = await fetch('https://julia-social-worker.mtaylor-247.workers.dev', {
+                    const formData = new FormData();
+                    formData.append('email', email);
+		    
+                    const response = await fetch('https://julia-social-worker.mtaylor-247.workers.dev', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
