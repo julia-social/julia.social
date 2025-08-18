@@ -4,8 +4,13 @@
     "details": [
       {
         "appID": "K3Q6WRBX4K.social.julia.notbot",
+        "components": [
+          { "/": "/flow/*" },
+          { "/": "/n1/*" }
+        ],
         "paths": [
-          "/flow/*"
+          "/flow/*",
+          "/n1/*"
         ]
       }
     ]
