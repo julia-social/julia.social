@@ -6,11 +6,13 @@
         "appID": "K3Q6WRBX4K.social.julia.notbot",
         "components": [
           { "/": "/flow/*" },
-          { "/": "/n1/*" }
+          { "/": "/n1/*" },
+          { "/": "/s1/*" }
         ],
         "paths": [
           "/flow/*",
-          "/n1/*"
+          "/n1/*",
+          "/s1/*"
         ]
       }
     ]
